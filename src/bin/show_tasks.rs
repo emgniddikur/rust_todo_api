@@ -12,5 +12,7 @@ fn main() {
         .load::<Task>(&connection)
         .expect("Error loading tasks");
 
-    println!("{}", results.len())
+    for task in results {
+        println!("{}", task.name);
+    }
 }
