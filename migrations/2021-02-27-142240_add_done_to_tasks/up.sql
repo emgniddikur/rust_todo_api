@@ -1,0 +1,1 @@
+ALTER TABLE tasks ADD done BOOLEAN NOT NULL AFTER name

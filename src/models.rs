@@ -4,6 +4,7 @@ use super::schema::tasks;
 pub struct Task {
     pub id: u64,
     pub name: String,
+    pub done: bool,
 }
 
 #[derive(Insertable)]
