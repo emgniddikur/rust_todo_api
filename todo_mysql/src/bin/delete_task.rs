@@ -1,10 +1,10 @@
 extern crate diesel;
-extern crate rust_todo_api;
+extern crate todo_mysql;
 
 use diesel::prelude::*;
-use rust_todo_api::establish_connection;
-use rust_todo_api::schema::tasks::dsl::{name, tasks};
 use std::env::args;
+use todo_mysql::establish_connection;
+use todo_mysql::schema::tasks::dsl::{name, tasks};
 
 fn main() {
     let target = args().nth(1).expect("Expected a target to match against");

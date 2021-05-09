@@ -1,5 +1,5 @@
-use rust_todo_api::{create_task, establish_connection};
 use std::io::stdin;
+use todo_mysql::{create_task, establish_connection};
 
 fn main() {
     let connection = establish_connection();

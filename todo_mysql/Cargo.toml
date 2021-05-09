@@ -1,5 +1,5 @@
 [package]
-name = "rust_todo_api"
+name = "todo_mysql"
 version = "0.1.0"
 authors = ["yoshiharu2580 <yoshiharu2580@gmail.com>"]
 edition = "2018"

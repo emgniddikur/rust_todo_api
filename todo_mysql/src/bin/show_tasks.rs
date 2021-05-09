@@ -1,10 +1,10 @@
 extern crate diesel;
-extern crate rust_todo_api;
+extern crate todo_mysql;
 
 use self::models::*;
 use self::schema::tasks::dsl::*;
 use diesel::prelude::*;
-use rust_todo_api::*;
+use todo_mysql::*;
 
 fn main() {
     let connection = establish_connection();
